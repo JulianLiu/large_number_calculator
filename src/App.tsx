@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Decimal from 'decimal.js';
 import Display from './components/Display';
+import FullscreenButton from './components/FullscreenButton';
 import History, { type HistoryItem } from './components/History';
 import Keypad from './components/Keypad';
 import UnitTable from './components/UnitTable';
@@ -284,6 +285,7 @@ export default function App() {
             <h1 className="text-2xl font-black tracking-tight">大數計算機</h1>
             <p className="text-xs font-medium tracking-widest text-stone-500">繁體中文・最大支援至無量 10⁶⁸</p>
           </div>
+          <FullscreenButton />
         </header>
 
         <main className="space-y-3">
